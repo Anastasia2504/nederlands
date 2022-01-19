@@ -419,9 +419,9 @@ class DictList {
 
     render() {
         let dicts = document.getElementById("dicts");
-        let html = '<p>kies woordenboeken:</p>';
+        let html = '<p class = "caption-menu">kies woordenboeken</p>';
         for (let name in DICTS) {
-            html += `<div id="dict-${name}" class="dicts-item">${name}</div>`;
+            html += `<div id="dict-${name}" class = "dict-button"><a class = "dict-button-link">${name}</a></div>`;
         }
         dicts.innerHTML = html;
         for (let name in DICTS) {
